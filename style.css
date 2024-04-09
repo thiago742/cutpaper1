@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background: linear-gradient(to right, rgb(6, 59, 46),rgb(0, 0, 0));
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+header.transparent {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+#scrollTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#scrollTopButton:hover {
+    background-color: #555;
+}
+
+#scrollTopButton:active {
+    transform: scale(0.95);
+}
+
+#whatsappButton {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 33px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#whatsappButton:hover::after {
+    content: "Entrar em Contato";
+    position: absolute;
+    height: 50px;
+    bottom: 15px;
+    right: 16px;
+    transform: translateX(-28%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding-top: 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#whatsappButton::after {
+    content: "Entrar em Contato";
+    position: absolute;
+    height: 50px;
+    bottom: 15px;
+    right: 16px;
+    transform: translateX(-28%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+#quem-somos {
+    display: flex;
+    align-items: center;
+    padding-top: 10rem;
+    background: linear-(to right, rgb(255, 255, 255),rgb(100, 63, 28));
+}
+
+.content{
+    margin-left: 50px;
+}
+
+#quem-somos .content h1 {
+    font-size: 3rem;
+}
+
+#quem-somos .content p {
+    font-size: 1.5rem;
+}
+#quem-somos img {
+    height: 500px;
+    margin-left: 100px;
+}
+
+.carousel {
+    width: 600px
+}
